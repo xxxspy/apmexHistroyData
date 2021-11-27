@@ -1,0 +1,20 @@
+{
+    "name": "apmex history data download!",
+    "version": "1.0",
+    "author": "www.mlln.cn",
+    "homepage_url": "https://mlln.cn",
+    "manifest_version": 3,
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": [
+          "https://www.apmex.com/*"
+        ],
+        "all_frames": true,
+        "js": ["jquery.min.js", "content-script.js"]
+      }
+    ],
+    "action": {}
+  }
